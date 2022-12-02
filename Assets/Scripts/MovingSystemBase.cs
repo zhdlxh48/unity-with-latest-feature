@@ -7,6 +7,8 @@ public partial class MovingSystemBase : SystemBase
 {
     protected override void OnUpdate()
     {
+        var random = SystemAPI.GetSingletonRW<RandomComponent>();
+        
         // This syntax (use foreach) is equal with Entities.Foreach(...).Run();
         
         /*
@@ -23,7 +25,7 @@ public partial class MovingSystemBase : SystemBase
         // When use Aspect
         foreach (var moveToPositionAspect in SystemAPI.Query<MoveToPositionAspect>())
         {
-            moveToPositionAspect.Move(SystemAPI.Time.DeltaTime);
+            moveToPositionAspect.Move(SystemAPI.Time.DeltaTime, random);
         }
 
         // ForEach returns Jobs, this need to call Functions to register Jobs 
