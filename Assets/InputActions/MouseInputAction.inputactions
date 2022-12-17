@@ -1,0 +1,106 @@
+{
+    "name": "MouseInputAction",
+    "maps": [
+        {
+            "name": "MouseActionMap",
+            "id": "20412685-3663-4261-b42b-7aebf6e8237f",
+            "actions": [
+                {
+                    "name": "MousePosition",
+                    "type": "PassThrough",
+                    "id": "0c8be951-aba0-4c5b-9651-829e817b1eec",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseDelta",
+                    "type": "PassThrough",
+                    "id": "799eaa79-30f1-456d-bc1e-f7e67b2d59e8",
+                    "expectedControlType": "Delta",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseScroll",
+                    "type": "PassThrough",
+                    "id": "4ce77055-4570-4273-9d88-72f255e5243a",
+                    "expectedControlType": "Delta",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseLeft",
+                    "type": "PassThrough",
+                    "id": "a8baeb98-21ce-46a1-8f73-3033e14c4e13",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1aad86c0-fbc9-43ba-902b-a38b546f7671",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MouseControlScheme",
+                    "action": "MouseDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a86c27dd-7c9c-459e-93e2-e30cda31065f",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MouseControlScheme",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a797428-5c03-4b6a-ba75-dcee9f3620c1",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MouseControlScheme",
+                    "action": "MouseScroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65a97c41-ee5b-4e23-ab59-3371f965829f",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MouseControlScheme",
+                    "action": "MouseLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MouseControlScheme",
+            "bindingGroup": "MouseControlScheme",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
